@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<br><br>
+		<title>Datos</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='styles1.css') }}">
+	</head>
+	
+	<body>
+	
+		<h1>Datos</h1>
+		<h2>Estos son tus Datos:</h2>
+		
+		<ul>
+		  <li>Nombres: {{ nombre1 }}</li>
+		  <li>Apellidos: {{ apellido1 }}</li>
+		  <li>Correo: {{ correo1 }}</li>
+		  <li>Usuario: {{ usuario1 }}</li>
+		  <li>Contraseña: {{ contraseña1 }}</li>
+		  <li>Fecha de Nacimiento: {{ fecha1 }}</li>
+		</ul>
+
+	</body>
+</html>

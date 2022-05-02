@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Register</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+	</head>
+	
+	<body>
+		<br><br><br>
+		<h1>REGISTER</h1>
+		<h2>Ingresa tus Datos para Registrarte</h2>
+		
+		<form action="{{ url_for('datos') }}" method="post">
+		
+			<h3>Nombres<br>
+			<input type="text" name="name" placeholder="Ingresa tus Nombres">
+			</h3>
+			
+			<h3>Apellidos<br>
+			<input type="text" name="lastname" placeholder="Ingresa tus Apellidos">
+			</h3>
+			
+			<h3>Correo<br>
+			<input type="text" name="adress" placeholder="Ingresa tu Correo">
+			</h3>
+			
+			<h3>Usuario<br>
+			<input type="text" name="user" placeholder="Ingresa tu Usuario">
+			</h3>
+			
+			<h3>Contraseña<br>
+			<input type="password" name="password" placeholder="Ingresa tu Contraseña">
+			</h3>
+			
+			<h3>Fecha de Nacimiento<br>
+			<input type="date" id="start" name="date"
+			value="2022-04-29"
+			min="1990-01-01" max="2022-12-31">
+			</h3>
+
+		
+			<h4><button>Submit</button></h4>
+		
+		</form>
+		
+	</body>
+</html>
